@@ -7,12 +7,6 @@
     "mounts": [],
     "customizations": {
         "vscode": {
-            
-                "settings": {
-                    "dotfiles.repository": "https://github.com/andrewknoesen/.dotfiles",
-                    "dotfiles.targetPath": "~/.dotfiles",
-                    "dotfiles.installCommand": "install_dotfiles_simple.sh"
-                },
             "extensions": [
                 "donjayamanne.python-extension-pack",
                 "ms-azuretools.vscode-docker",

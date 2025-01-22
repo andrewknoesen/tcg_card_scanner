@@ -5,3 +5,4 @@
 **.pyc
 **/__pycache__
 **/.vscode
+tcg_scanner/.devcontainer/devcontainer.json
