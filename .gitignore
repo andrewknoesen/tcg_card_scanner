@@ -1,0 +1,8 @@
+.DS_Store
+**/outputs/*
+**/.venv
+*.jpg
+**.pyc
+**/__pycache__
+**/.vscode
+tcg_scanner/.devcontainer/devcontainer.json
