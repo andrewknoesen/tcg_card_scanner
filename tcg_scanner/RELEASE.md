@@ -1,6 +1,6 @@
 # RELEASE NOTES
 
-## 0.1.0
+## 0.1.1
 - Cleanup
     - Removed unused files
 
