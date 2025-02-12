@@ -112,13 +112,15 @@ class Normalizer:
         self, kernel: tuple[int, int] = (1, 1), show_plot: Optional[bool] = False
     ) -> List[np.ndarray]:
         blur = cv2.GaussianBlur(self.img_gray, (1, 1), 0)
+        cv2.imwrite(f"outputs/blur.jpg", blur)
         _, thresh = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-        inverted = thresh
-
+        # inverted = thresh
+        inverted = cv2.bitwise_not(thresh)
         # Create kernel for morphological operations
         kernel = cv2.getStructuringElement(cv2.MORPH_RECT, kernel)
         morph = cv2.morphologyEx(inverted, cv2.MORPH_CLOSE, kernel)
         morph = cv2.morphologyEx(morph, cv2.MORPH_OPEN, kernel)
+        cv2.imwrite(f"outputs/morph.jpg", morph)
 
         contours, _ = cv2.findContours(
             morph, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
