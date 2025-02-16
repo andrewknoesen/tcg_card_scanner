@@ -18,7 +18,10 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "80:80"  # Changed from 3000 since we're using nginx in production
+      - "3000:3000"
+    environment:
+      - HOST=0.0.0.0
+      - CHOKIDAR_USEPOLLING=true
     depends_on:
       - backend
     networks:
