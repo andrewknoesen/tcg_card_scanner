@@ -2,7 +2,7 @@ from typing import Optional
 import cv2
 import pytesseract
 from matplotlib import pyplot as plt
-from tcg_scanner.normalizer.normalizer import Normalizer
+from services.normalizer.normalizer import Normalizer
 
 
 class OCR:

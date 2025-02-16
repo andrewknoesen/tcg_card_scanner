@@ -1,9 +1,14 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 name = "tcg-scanner"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "TCG React app for image card scanner."
 authors = ["Andrew Knoesen <andrewknoesen@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -12,11 +17,10 @@ matplotlib = "^3.10.0"
 imutils = "^0.5.4"
 opencv-python = "^4.10.0.84"
 requests = "^2.32.3"
-
+flask-cors = "^5.0.0"
+flask = "^3.0.0"
+flasgger = "^0.9.7.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+mypy = "^1.8.0"  # Add this for type checking

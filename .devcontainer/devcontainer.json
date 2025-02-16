@@ -1,0 +1,27 @@
+{
+    "name": "TCG Scanner Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "./../"
+    },
+    "mounts": [],
+    "customizations": {
+        "vscode": {
+            
+                "settings": {
+                    "dotfiles.repository": "https://github.com/andrewknoesen/.dotfiles",
+                    "dotfiles.targetPath": "~/.dotfiles",
+                    "dotfiles.installCommand": "install_dotfiles_simple.sh"
+                },
+            "extensions": [
+                "donjayamanne.python-extension-pack",
+                "ms-azuretools.vscode-docker",
+                "ms-python.black-formatter",
+                "stackbreak.comment-divider",
+                "oderwat.indent-rainbow",
+                "ms-python.pylint",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    }
+}
