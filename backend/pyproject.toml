@@ -19,6 +19,7 @@ opencv-python = "^4.10.0.84"
 requests = "^2.32.3"
 flask-cors = "^5.0.0"
 flask = "^3.0.0"
+flasgger = "^0.9.7.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"

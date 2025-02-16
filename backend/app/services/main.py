@@ -1,7 +1,7 @@
 from pathlib import Path
-from tcg_scanner.normalizer.normalizer import Normalizer
-from tcg_scanner.ocr.ocr import OCR
-from tcg_scanner.swudb.swudb import SWUDB
+from services.normalizer.normalizer import Normalizer
+from services.ocr.ocr import OCR
+from services.swudb.swudb import SWUDB
 
 
 def main():
