@@ -1,5 +1,9 @@
 # RELEASE NOTES
 
+## 0.1.3
+- Built basic front end
+    - Using react for front end
+
 ## 0.1.2
 - Built basic flask pattern
     - Swagger docs are generated automatically
