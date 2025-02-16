@@ -1,5 +1,9 @@
 # RELEASE NOTES
 
+## 0.1.2
+- Built basic flask pattern
+    - Swagger docs are generated automatically
+
 ## 0.1.1
 - Cleanup
     - Removed unused files
