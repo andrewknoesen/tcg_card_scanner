@@ -1,5 +1,8 @@
 # RELEASE NOTES
 
+## 0.2.0
+- Have the camera portion working now
+
 ## 0.1.3
 - Built basic front end
     - Using react for front end
